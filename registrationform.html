@@ -1,0 +1,47 @@
+<html>
+
+   <head>
+      <title>Registration Form</title>
+      <script>
+	function validateForm() {
+	  var firstname = document.forms["myForm"]["first_name"].value;
+ 	  var lastname = document.forms["myForm"]["last_name"].value;
+	  var email = document.forms["RegForm"]["email"].value;    
+   	  var phone = document.forms["RegForm"]["contact"].value; 
+ 	  var address = document.forms["RegForm"]["address"].value; 
+	  if (firstname == "") {
+	    alert("First name must be filled out");
+	    return false;
+	  }
+
+	
+}
+</script>
+   </head>
+	
+   <body bgcolor= "#cce6ff" >
+   <center><br><br>
+   <font size = "6">
+   Login Form : </font><br><br></center>
+     <center><form name="myForm" action="submission.html" onsubmit="return validateForm()" method="post" >
+	<table border = "2" bgcolor = "silver">
+	
+	<tr><td>First name:</td><td> <input type = "text" name = "first_name" /> </td></tr>
+	<tr> <td>Last name:</td><td> <input type = "text" name = "last_name" /> </td></tr>
+	<tr><td> Address :</td><td> <textarea rows ="5" cols ="30" name = "address"></textarea> </td></tr>
+	<tr><td> Email :</td><td> <input type = "text" name = "email"/> </td></tr>
+	<tr><td> Contact number :</td><td> <input type = "text" name = "contact" /> </td></tr>
+
+	
+	 
+
+	
+	
+	</table>
+	<input type = "submit" name = "submit" value = "Submit" />
+        <input type = "reset" name = "reset"  value = "Reset" />
+        
+      </form></center>
+   </body>
+	
+</html>
